@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:wght@200&display=swap");
+
+body{
+  padding:0px;
+  margin:0px;
+}
+
+#menu {
+  width :100vw;
+  height : 100vh;
+  background-color: #26838C;
+}
+
+#h2menu {
+  font-family: 'Fredericka the Great', cursive;
+  color :white;
+  font-size : 2rem;
+  text-align: center;
+  margin: 0;
+  padding-top: 12vh;
+}
+
+#ardoise_menu, #ardoise_vin{
+  display:flex;
+  width : 80vw;
+  height: 80vh;
+  background-color: #424442;
+  border-radius: 4px;
+  border:2px white double;
+  position:absolute;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 0vh;
+  margin-bottom: 10vh;
+}
+
+#text_menu, #text_vin {
+  color :white;
+  font-family: 'Cookie', cursive;
+  text-align: center;
+  margin:auto;
+  width:75vw;
+  height: 80vh; 
+  margin: auto;
+}
+
+#text_menu{
+  font-size: 3vh ;
+}
+
+.nom_vin{
+  color:yellowgreen;
+}
+
+#bouton_vin, #bouton_miam{
+  background-color:#424442;
+  border: 2px white solid;
+  border-radius: 50%;
+  height:12vw;
+  width:12vw;
+  color: #26838C;
+  font-size :8vw;
+  padding-top: 2vh;
+}
+
+.flip-box {
+  perspective: inherit;
+  z-index: 2;
+  transform: translateY(-50%) translateZ(60px) scale(.94);
+}
+
+.flip-box-front, .flip-box-back {
+  transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+}
+
+.flip-box-back {
+  position: absolute;
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-front {
+  transform: rotateY(-180deg);
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-back {
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+}
+/* 
+.flip-box.active .flip-box-front {
+  transform: rotateY(-180deg);
+  transform-style: preserve-3d;
+}
+
+.flip-box.active .flip-box-back {
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+} */
+
+
+/*
+#logo_fait_maison{
+  position:absolute;
+  border-radius: 100%;
+<img id ="logo_fait_maison" src="Pictures/faitmaison2.jpg" alt="logo fait maison" width = 100px;>
+}
+*/
